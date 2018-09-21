@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title text-center>
+      Hormones de Croissance
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="traitement-image">
+  <!-- if(connecté) {-->
+  <ion-list>
+    <ion-item>
+      <ion-label color="primary">Date</ion-label>
+      <ion-datetime displayFormat="DDDD D MMMM YYYY" [(ngModel)]="myDate"></ion-datetime>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Position</ion-label>
+      <ion-select [(ngModel)]="position">
+        <ion-option value="f">Bras Gauche</ion-option>
+        <ion-option value="m">Bras Droit</ion-option>
+        <ion-option value="m">Cuisse Droite</ion-option>
+        <ion-option value="m">Cuisse Gauche</ion-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label color="primary">Dosage</ion-label>
+      <ion-input type="number" placeholder="Entrez le dosage en mg" text-right></ion-input>
+    </ion-item>
+  </ion-list>
+  <button ion-button round float-right>Enregistrer</button>
+  <!--} else { -->
+  <ion-content>
+    <p>
+      <b>Sur cette application mobile, vous pouvez enregistrer les injections des hormones de croissance jour par jour
+        et
+        inscrire les différents rendez-vous!</b>
+    </p>
+    <p>
+      <a [navPush]="loginPage">Connectez-vous</a> pour pouvoir y accéder!
+    </p>
+  </ion-content>
+  <!-- } -->
+</ion-content>

@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title text-center>
+      Connexion
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding class="bg-image">
+  <ion-list insert>
+    <ion-item>
+      <ion-label color="primary" stacked>Identifiant</ion-label>
+      <ion-input type="text" placeholder="Entrez votre Identifiant"></ion-input>
+    </ion-item>
+
+    <ion-item class='item'>
+      <ion-label color="primary" stacked>Mot de Passe</ion-label>
+      <ion-input type="password" placeholder="Entrez votre Mot de passe"></ion-input>
+    </ion-item>
+    <button ion-button round float-right>Se connecter</button>
+
+    <button ion-button round color='secondary' [navPush]="loginPage">S'inscrire
+    </button>
+
+  </ion-list>
+
+</ion-content>

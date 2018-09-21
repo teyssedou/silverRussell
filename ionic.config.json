@@ -1,0 +1,7 @@
+{
+  "name": "SilverRussel",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

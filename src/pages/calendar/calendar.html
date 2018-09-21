@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title text-center>
+      Rendez-vous
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="calendar-image">
+  <ion-list>
+    <ion-item>
+      <ion-label color="primary">Quand?</ion-label>
+      <ion-datetime placeholder="Date et l'Heure du Rdv" displayFormat="DDD D MMM YYYY à HH:MM" [(ngModel)]="myDate"></ion-datetime>
+    </ion-item>
+
+    <ion-item>
+      <ion-label color="primary">Où?</ion-label>
+      <ion-input type="text" placeholder="Lieu du Rdv" text-right></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label color="primary">Avec qui?</ion-label>
+      <ion-input type="text" text-right></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label color="primary">Commentaires:</ion-label>
+      <ion-textarea placeholder="Ajouter un commentaire" text-right></ion-textarea>
+    </ion-item>
+  </ion-list>
+
+  <button ion-button round float-right>Enregistrer</button>
+</ion-content>
